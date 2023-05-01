@@ -27,6 +27,7 @@ const Search = () => {
   const [error, setError] = useState(false);
   const [squery, setSquery] = useState("");
   const [showResults, setShowResults] = useState(false);
+ 
 
   useEffect(() => {
     const fetchSearchQuery = async () => {
@@ -124,7 +125,7 @@ const Search = () => {
                     name={i.item.name}
                     img={i.item.large}
                     rank={i.item.market_cap_rank}
-                    url={i.item.url}
+                    // url={i.item.url}
                     key={i.item.id}
                     id={i.item.id}
                   />
@@ -146,7 +147,6 @@ const Search = () => {
                         name={i.name}
                         img={i.large}
                         rank={i.market_cap_rank}
-                        url={i.url}
                         key={i.id}
                         id={i.id}
                       />
@@ -163,7 +163,6 @@ const Search = () => {
                         name={i.name}
                         img={i.large}
                         rank={i.market_cap_rank}
-                        url={i.url}
                         key={i.id}
                         id={i.id}
                       />
@@ -178,7 +177,7 @@ const Search = () => {
   );
 };
 
-export const SearchCard = ({ id, name, img, rank, url }) => {
+export const SearchCard = ({ id, name, img, rank }) => {
   return (
     <>
       <NavLink to={`/coin/${id}`} target={"blank"}>

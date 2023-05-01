@@ -6,7 +6,7 @@ import Home from './Components/Home/Home'
 import Coins from './Components/Coins/Coins'
 import Exchanges from './Components/Exchanges/Exchanges'
 import Footer from './Components/Footer/Footer'
-import Search, { SearchCard } from './Components/Search/Search'
+import Search, { ExchangeCard, SearchCard } from './Components/Search/Search'
 
 
 const App = () => {
